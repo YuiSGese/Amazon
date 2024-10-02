@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone 2</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/favicon_io/Amazon_icon.svg" />
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <a class="logo hover-border" href="/">
+        <img src="./assets/img/amazon-logo.png" />
+      </a>
+      <a href="#" class="nav-country hover-border">
+        <img src="./assets/img/location_icon.png" height="20" alt="" />
+        <div>
+          <p>Deliver to</p>
+          <h4>Japan</h4>
+        </div>
+      </a>
+
+      <div class="nav-search">
+        <button class="nav-search-gategory">
+          ALL
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <input
+          type="text"
+          class="nav-search-input"
+          placeholder="Search Amazon"
+        />
+        <button class="search-button" tabindex="0">
+          <i class="fa fa-search"></i>
+        </button>
+        <!-- ALL button dropdown -->
+        <div class="all-search-dropdown">
+          <ul>
+            <li><a href="">All Deparments</a></li>
+            <li><a href="">Arts & Crafts</a></li>
+            <li><a href="">Automotive</a></li>
+            <li><a href="">Baby</a></li>
+            <li><a href="">Beauty & Personal Care</a></li>
+            <li><a href="">Books</a></li>
+            <li><a href="">Boy's Fashion</a></li>
+            <li><a href="">Computers</a></li>
+            <li><a href="">Digital Music</a></li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Girl's Fashion</a></li>
+            <li><a href="">Health & Household</a></li>
+            <li><a href="">Home & Kitchen</a></li>
+            <li><a href="">Industrial & Scientific</a></li>
+            <li><a href="">Kidle Store</a></li>
+            <li><a href="">Men's Fashion</a></li>
+            <li><a href="">Movies & TV</a></li>
+            <li><a href="">Prime Video</a></li>
+            <li><a href="">Software</a></li>
+            <li><a href="">Sports & Outdoor</a></li>
+          </ul>
+        </div>
+
+        <!-- Dropdown search history -->
+        <div class="search-history-dropdown">
+          <ul>
+            <li>
+              <span>PC gaming</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+            <li>
+              <span>PlayStaytion 5</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+            <li>
+              <span>Iphone 16 pro</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+            <li>
+              <span>Headphone</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+            <li>
+              <span>Best seller books</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+            <li>
+              <span>Amazon prime</span>
+              <button class="delete-history">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Overlay -->
+        <div class="overlay"></div>
+      </div>
+      <!--------------------------NAV SEARCH END--------------------------->
+
+      <!-- language -->
+      <div class="nav-language-container">
+        <button class="nav-language hover-border">
+          <img src="./assets/img/us_flag.png" width="25px" alt="" />
+          EN
+          <img src="./assets/img/dropdown_icon.png" width="8px" alt="" />
+        </button>
+
+        <!-- Mũi tên và Dropdown menu -->
+        <div class="language-dropdown">
+          <div class="dropdown-header">
+            Change Language <a href="#">learn more</a>
+          </div>
+          <div class="language-options">
+            <label>
+              <input type="radio" name="language" value="en" />
+              English - EN
+            </label>
+            <label>
+              <input type="radio" name="language" value="jp" /> 日本 -JP
+            </label>
+            <label>
+              <input type="radio" name="language" value="ko" />
+              한국어 - KO
+            </label>
+            <label>
+              <input type="radio" name="language" value="ko" />
+              Español - ES
+            </label>
+            <label>
+              <input type="radio" name="language" value="ko" />
+              Deutsch - DE
+            </label>
+            <label>
+              <input type="radio" name="language" value="ko" />
+              中文 (简体) - ZH
+            </label>
+            <label>
+              <input type="radio" name="language" value="ko" />
+              Português - PT
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- sign in -->
+      <div class="signin-container">
+        <a href="/signin.html" class="nav-text hover-border">
+          Hello, Sign in
+          <div>
+            <span>Account & Lists</span>
+            <img src="./assets/img/dropdown_icon.png" width="8px" />
+          </div>
+        </a>
+        <div class="signin-dropdown">
+          <a href="/signin.html" class="signin-btn">Sign in</a>
+          <p>New customer? <a href="/signup.html">Start here</a></p>
+          <hr />
+          <div class="signin-dropdown-content">
+            <div class="column">
+              <strong>Your Lists</strong>
+              <a href="#">Create your List</a>
+              <a href="#">Find a List or Registry</a>
+            </div>
+            <div class="column column-right">
+              <strong>Your Account</strong>
+              <a href="#">Account</a>
+              <a href="#">Orders</a>
+              <a href="#">Recommendations</a>
+              <a href="#">Browsing History</a>
+              <a href="#">Watchlist</a>
+              <a href="#">Video Purchases & Rentals</a>
+              <a href="#">Kindle Unlimited</a>
+              <a href="#">Content & Devices</a>
+              <a href="#">Subscribe & Save Items</a>
+              <a href="#">Memberships & Subscriptions</a>
+              <a href="#">Music Library</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- return & orders -->
+      <a href="" class="nav-text nav-text-right hover-border">
+        Return
+        <span>& Orders</span>
+      </a>
+      <a href="/signin.html" class="mobile-user-icon" style="display: none">
+        <img src="./assets/img/user.png" alt="" />
+      </a>
+      <a href="./cart.html" class="nav-cart hover-border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <!-- <img src="./assets/img/cart_icon.png" width="35px" alt="" /> -->
+        <p>Cart</p>
+      </a>
+    </nav>
+    <div class="nav-bottom">
+      <div>
+        <img src="./assets/img/menu_icon.png" width="25px" alt="" />
+        <!-- <button><a href="">ALL</a></button> -->
+        <a href="#" role="button">ALL</a>
+      </div>
+      <a href="">Today's Deals</a>
+      <a href="">Customer Service</a>
+      <a href="">Registry</a>
+      <a href="">Gift Cards</a>
+      <a href="">Sell</a>
+    </div>
+    <!-- Banner -->
+    <div class="container">
+      <div class="header-slider">
+        <a href="#" class="control_prev">&#8592;</a>
+        <a href="#" class="control_next">&#8594;</a>
+        <div class="slider-wrapper">
+          <a href="">
+            <img src="./assets/img/header1.jpg" class="header-img" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/img/header2.jpg" class="header-img" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/img/header3.jpg" class="header-img" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/img/header4.jpg" class="header-img" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/img/header5.jpg" class="header-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- box row with grid -->
+    <div class="container">
+      <div class="box-row header-box">
+        <div class="box-col">
+          <h2>Level up your gaming</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/PC-gaming.jpg" alt="Product 1" />
+              </a>
+              <a href="#">PC gaming</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/xbox.jpg" alt="Product 2" />
+              </a>
+              <a href="#">Xbox</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/playstation.jpg" alt="Product 3" />
+              </a>
+              <a href="#">PlayStation</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/nintendo.jpg" alt="Product 4" />
+              </a>
+              <a href="#">Nintendo Switch</a>
+            </div>
+          </div>
+          <a class="product-item-link" href="">See all deals</a>
+        </div>
+        <div class="box-col">
+          <h2>New home arrivals under $50</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/kitchen.jpg" alt="Product 1" />
+              </a>
+              <a href="#">Kitchen & Dining</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/home-improvement.jpg" alt="Product 2" />
+              </a>
+              <a href="#">Home improvement</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/decor.jpg" alt="Product 3" />
+              </a>
+              <a href="#">Decor</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/bedding.jpg" alt="Product 4" />
+              </a>
+              <a href="#">Bedding & bath</a>
+            </div>
+          </div>
+          <a class="product-item-link" href="">See all deals</a>
+        </div>
+        <div class="box-col">
+          <h2>Shop deals in Fashion</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/jeans.jpg" alt="Product 1" />
+              </a>
+              <a href="#">Jeans under $25</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/tops.jpg" alt="Product 2" />
+              </a>
+              <a href="#">Tops under $15</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/dresses.jpg" alt="Product 3" />
+              </a>
+              <a href="#">Dresses under $50</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/shoes.jpg" alt="Product 4" />
+              </a>
+              <a href="#">Shoes under $30</a>
+            </div>
+          </div>
+          <a class="product-item-link" href="">See all deals</a>
+        </div>
+        <div class="box-col">
+          <h2>Refresh</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/dining.jpg" alt="Product 1" />
+              </a>
+              <a href="#">Dining</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/home.jpg" alt="Product 2" />
+              </a>
+              <a href="#">Home</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/kitchen2.jpg" alt="Product 3" />
+              </a>
+              <a href="#">Kitchen</a>
+            </div>
+            <div class="product-item">
+              <a href="#">
+                <img src="./assets/img/health.jpg" alt="Product 4" />
+              </a>
+              <a href="#">Health & Beauty</a>
+            </div>
+          </div>
+          <a class="product-item-link" href="">See all deals</a>
+        </div>
+      </div>
+    </div>
+    <!-- box row -->
+    <div class="container">
+      <div class="box-row">
+        <div class="box-col box-col-hover">
+          <h3>Get your game on</h3>
+          <a href="">
+            <img src="./assets/img/gamestore.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Home décor under $50</h3>
+          <a href="">
+            <img src="./assets/img/homedecor.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Toy under $25</h3>
+          <a href="">
+            <img src="./assets/img/box1-3.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Beauty steals under $25</h3>
+          <a href="">
+            <img src="./assets/img/beauty.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- header-slider END -->
+    <div class="container">
+      <div class="products-slider">
+        <button class="slider-control prev">&#8592;</button>
+        <button class="slider-control next">&#8594;</button>
+        <h2>Related to items you've viewed</h2>
+        <div class="products">
+          <a href="./product.html">
+            <img src="./assets/img/product_img.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-1.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-2.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-3.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-4.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-5.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-6.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-7.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-8.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-9.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-10.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-11.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-12.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-13.jpg" alt="" />
+          </a>
+          <a href="#!"></a>
+            <img src="./assets/img/related-3.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-4.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-5.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-6.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-7.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-8.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-9.jpeg" alt="" />
+          </a>
+          <a href="#!"></a>
+            <img src="./assets/img/related-4.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-5.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-6.jpeg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/related-7.jpeg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Most wished for in Video Games -->
+    <div class="container">
+      <div class="products-slider">
+        <button class="slider-control prev">&#8592;</button>
+        <button class="slider-control next">&#8594;</button>
+        <h2>Most wished for in Video Games</h2>
+        <div class="products">
+          <a href="#!">
+            <img src="./assets/img/game1.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game6.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game3.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game4.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game5.htm" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game2.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game7.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game8.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game9.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game10.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game11.webp" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game12.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game13.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game5.htm" alt="" />
+          </a>
+          <a href="#!"></a>
+            <img src="./assets/img/game1.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game6.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game3.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game4.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game5.htm" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game2.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game7.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game8.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game9.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game9.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game10.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game11.webp" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game12.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game13.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/game5.htm" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="products-slider-with-price">
+        <button class="slider-control prev">&#8592;</button>
+        <button class="slider-control next">&#8594;</button>
+        <h2>Deals Under $25</h2>
+        <div class="products">
+          <div class="product-card">
+            <div class="product-img-container">
+              <a href="">
+                <img src="./assets/img/product2-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-2.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-3.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-4.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-5.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-6.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-7.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-8.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-9.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-10.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-11.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./assets/img/product2-12.jpg" alt="" />
+            </div>
+            <div class="product-offer">
+              <p>27% off</p>
+              <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+            <h4>This product is the best choice for you</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  products-slider-with-price END-->
+
+    <div class="container">
+      <div class="box-row">
+        <div class="box-col box-col-hover">
+          <h3>Stationary</h3>
+          <a href="">
+            <img src="./assets/img/box3-1.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Laptops for study</h3>
+          <a href="">
+            <img src="./assets/img/box3-2.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Office Chair</h3>
+          <a href="">
+            <img src="./assets/img/box3-3.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Gaming Monitor</h3>
+          <a href="">
+            <img src="./assets/img/box3-4.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="products-slider">
+        <button class="slider-control prev">&#8592;</button>
+        <button class="slider-control next">&#8594;</button>
+        <h2>Best Sellers in Sports & Outdoors</h2>
+        <div class="products">
+          <a href="#!">
+            <img src="./assets/img/product1-1.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-2.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-3.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-4.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-5.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-6.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-7.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-8.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-9.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-10.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-7.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-8.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-9.jpg" alt="" />
+          </a>
+          <a href="#!">
+            <img src="./assets/img/product1-10.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box-row">
+        <div class="box-col box-col-hover">
+          <h3>Free international returns</h3>
+          <a href="">
+            <img src="./assets/img/box2-1.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Lunar new year</h3>
+          <a href="">
+            <img src="./assets/img/box2-2.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Toy under $25</h3>
+          <a href="">
+            <img src="./assets/img/box2-3.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+        <div class="box-col box-col-hover">
+          <h3>Deals in PCs</h3>
+          <a href="">
+            <img src="./assets/img/box2-4.jpg" alt="" />
+          </a>
+          <a href="/">Shop More</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container footer-wrap">
+        <a class="logo" href="/">
+          <img src="./assets/img/amazon-logo.png" width="100px" />
+        </a>
+        <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
